@@ -10,7 +10,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>patchwork by pfraze</title>
+    <title>patchwork alpha</title>
   </head>
 
   <body>
@@ -18,41 +18,92 @@
       <div class="inner">
 
         <header>
-          <h1>patchwork</h1>
-          <h2>secure p2p sharing tool</h2>
+          <h1>patchwork <span>alpha</span></h1>
+          <h2>secure p2p sharing</h2>
         </header>
-
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/pfraze/ssbc.github.io/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/pfraze/ssbc.github.io/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/pfraze/ssbc.github.io" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
 
         <hr>
 
         <section id="main_content">
-          <p>Patchwork is a p2p social-sharing tool for the desktop. Its features include:</p>
+          <div class="">
+            <p>Patchwork is a p2p social-sharing tool for desktops. Its features include:</p>
+            <ul>
+              <li>Public and topical newsfeeds</li>
+              <li>End-to-end encrypted private messaging</li>
+              <li>Internet, WiFi, and offline operation</li>
+              <li>GPL licensed</li>
+            </ul>
+          </div>
 
-<ul>
-<li>Public markdown newsfeeds</li>
-<li>End-to-end encrypted private messaging</li>
-<li>Communication over WiFi</li>
-<li>No sign-in, and smooth offline operation</li>
-<li>GPL licensed</li>
-</ul>
+          <hr>
 
-<p>What's interesting about patchwork? It uses the Secure Scuttlebutt protocol.</p>
+          <section id="downloads" class="clearfix">
+            <a href="https://github.com/ssbc/patchwork" id="download-zip" class="button"><span>For OSX</span></a>
+            <a href="https://github.com/ssbc/patchwork" id="download-zip" class="button"><span>For Windows</span></a>
+            <a href="https://github.com/ssbc/patchwork" id="view-on-github" class="button"><span>View on GitHub</span></a>
+          </section>
 
-<ol>
-<li>The network doesnt use hosts or central authorities. Users publish signed data-logs, which are gossiped through the network.</li>
-<li>Users are identified by pubkeys. The social profiles and follow-graph are published on the logs to identify users, similar to PGP's Web of Trust.</li>
-<li>Log entries are typed JSON entries with content-addressed links to messages, file-blobs, and other logs. Its API is accessible through the Scuttlebot server.</li>
-<li>Exchanging only in LAN mode creates a <a href="https://en.wikipedia.org/wiki/Sneakernet">Sneakernet</a>.</li>
-</ol>
+          <section id="join">
+            <h2>Closed Alpha: Invite-only</h2>
+
+            <p>Patchwork is in closed alpha, and is invite-only. Find pfraze, domanic, or mixmix in #scuttlebutt on Freenode to get an invite&nbsp;code.</p>
+          </section>
+
+          <table class="grid">
+            <tr>
+              <td><a href="./images/screenshot2.png" target="_blank"><img src="./images/screenshot2.png"></a></td>
+              <td><a href="./images/screenshot3.png" target="_blank"><img src="./images/screenshot3.png"></a></td>
+            </tr>
+            <tr>
+              <td><a href="./images/screenshot1.png" target="_blank"><img src="./images/screenshot1.png"></a></td>
+              <td><a href="./images/screenshot4.png" target="_blank"><img src="./images/screenshot4.png"></a></td>
+            </tr>
+          </table>
         </section>
 
+        <hr>
+
+        <section id="download">
+          <h2>Download...</h2>
+
+          <p>To setup easily, download the install package:</p>
+
+          <section id="downloads" class="clearfix">
+            <a href="https://github.com/ssbc/patchwork" id="download-zip" class="button"><span>For OSX</span></a>
+            <a href="https://github.com/ssbc/patchwork" id="download-zip" class="button"><span>For Windows</span></a>
+          </section>
+
+          <pre><code>shasum patchwork.osx.v2-rc1.zip
+193255893509ef62a2a7f852f51dfcd31247bd20 patchwork.osx.v2-rc1.zip
+
+shasum patchwork.win.v2-rc1.zip
+c142eeff9648704642b8b16e9784a813932255a5 patchwork.win.v2-rc1.zip</pre></code>
+        </section>
+
+        <hr>
+
+        <section id="clone">
+          <h2>...or Clone</h2>
+
+          <p>Cloning with Git makes it easy to update in the future. (Requires node v4.)</p>
+
+          <pre><code>git clone https://github.com/ssbc/patchwork.git
+cd patchwork
+npm install
+npm run build:ui
+npm start</pre></code>
+
+          <p>To update:</p>
+
+          <pre><code>cd patchwork
+git pull
+npm install
+npm run build:ui</pre></code>
+        </section>
+
+
+
         <footer>
-          patchwork is maintained by <a href="https://github.com/pfraze">pfraze</a><br>
           This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
         </footer>
 

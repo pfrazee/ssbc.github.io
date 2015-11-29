@@ -218,7 +218,6 @@ em {
 
 table {
   width: 100%;
-  border: 1px solid #ebebeb;
 }
 
 th {
@@ -228,7 +227,12 @@ th {
 td {
   font-weight: 300;
   text-align: center;
-  border: 1px solid #ebebeb;
+  padding: 5px 5px 0;
+  vertical-align: middle;
+}
+
+table.grid img {
+  border: 1px solid #bbb;
 }
 
 form {
@@ -242,6 +246,9 @@ form {
 
 h1 {
   font-size: 32px;
+}
+h1 span {
+  color: gray;
 }
 
 h2 {
@@ -276,7 +283,7 @@ h6 {
 
 p {
   margin-bottom: 20px;
-  font-weight: 300;
+
 }
 
 a {
@@ -295,15 +302,20 @@ blockquote {
 }
 
 ul li {
-  list-style-position: inside;
-  list-style: disc;
   padding-left: 20px;
+  list-style: disc;
+  list-style-position: inside;
+  font-weight: 300;
 }
 
+ol {
+  padding-left: 40px;
+}
 ol li {
-  list-style-position: inside;
   list-style: decimal;
+  list-style-position: outside;
   padding-left: 3px;
+  font-weight: 300;
 }
 
 dl dt {
@@ -371,3 +383,12 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) { }
+
+
+#join {
+  text-align: center;
+  font-size: 130%;
+  background: #ddd;
+  margin-bottom: 30px;
+  padding: 20px 0 1px;
+}

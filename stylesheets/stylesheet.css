@@ -390,5 +390,18 @@ footer a:hover {
   font-size: 130%;
   background: #ddd;
   margin-bottom: 30px;
-  padding: 20px 0 1px;
+  padding: 20px 20px 1px;
+}
+
+#about {
+  text-align: center;
+}
+
+#about span {
+  white-space: pre;
+  margin-right: 15px;
+}
+
+#about span:nth-child(even) {
+  color: #999;
 }

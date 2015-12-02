@@ -90,7 +90,7 @@ header h2 {
 }
 
 .inner {
-  width: 620px;
+  width: 650px;
   margin: 0 auto;
 }
 
@@ -396,6 +396,7 @@ footer a:hover {
 #about {
   text-align: center;
   font-weight: 300;
+  font-size: 21px;
 }
 
 #about span {
